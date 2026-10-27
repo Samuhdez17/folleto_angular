@@ -1,0 +1,75 @@
+<section class="relative isolate min-h-[calc(100vh-3rem)] overflow-hidden rounded-[4rem] bg-white px-6 py-8 text-[#2D3748] sm:px-10 sm:py-10 lg:px-14">
+    <header class="flex items-center justify-between">
+        <a class="flex items-center gap-3" aria-label="Doble'S prints, inicio">
+            <span class="flex size-11 items-center justify-center rounded-2xl bg-[#0D55FC] text-lg font-extrabold text-white shadow-lg shadow-blue-200">LOGO</span>
+            <span class="text-lg font-bold tracking-tight">Doble'S <span class="font-medium text-[#4A5568]">prints</span></span>
+        </a>
+    </header>
+
+    <div class="mx-auto grid max-w-7xl items-center gap-12 pb-10 pt-14 md:grid-cols-[1.02fr_0.98fr] md:gap-8 md:pb-16 md:pt-20 lg:gap-16">
+        <div class="max-w-2xl">
+        <p class="mb-6 inline-flex items-center gap-2 rounded-full bg-[#E6F0FF] px-4 py-2 text-sm font-semibold text-[#0A44C8]">
+            <span aria-hidden="true">✳</span>
+            Un mundo de posibilidades, capa a capa
+        </p>
+        <h1 class="text-5xl font-extrabold leading-[1.04] tracking-[-0.045em] text-[#2D3748] sm:text-6xl lg:text-7xl">
+            Hay ideas que merecen <span class="relative inline-block text-[#0D55FC]">tomar forma<span aria-hidden="true" class="absolute -bottom-1 left-0 h-2 w-full -rotate-2 rounded-full bg-[#F8BA62]/80"></span></span>.
+        </h1>
+        <p class="mt-7 max-w-xl text-lg leading-8 text-[#4A5568] sm:text-xl">
+            Objetos únicos, detalles que sorprenden y proyectos nacidos de tu imaginación. ¿Qué te gustaría crear hoy?
+        </p>
+        <div class="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <button
+            type="button"
+            (click)="salir()"
+            class="inline-flex min-h-14 items-center justify-center gap-3 rounded-2xl bg-[#F8BA62] px-7 py-4 text-base font-bold text-[#2D3748] shadow-lg shadow-orange-100 transition hover:-translate-y-0.5 hover:bg-[#E8A74F] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#0D55FC]"
+            >
+            Descubrir los productos
+            <span aria-hidden="true" class="text-xl transition-transform group-hover:translate-x-1">→</span>
+            </button>
+            <span class="text-sm leading-6 text-[#4A5568]">O trae esa idea que no<br class="hidden sm:block"> encuentras en ningún sitio.</span>
+        </div>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-xl" aria-label="Muestra ilustrada de objetos impresos en 3D">
+        <div class="absolute inset-x-10 bottom-4 top-8 rounded-[2.5rem] bg-[#E6F0FF]"></div>
+        <div class="relative grid min-h-[22rem] grid-cols-2 gap-4 p-5 sm:min-h-[27rem] sm:gap-5 sm:p-7">
+            <article class="relative flex min-h-52 flex-col justify-between overflow-hidden rounded-[1.75rem] bg-white p-5 shadow-xl shadow-blue-900/5 ring-1 ring-[#E2E8F0] sm:min-h-60 sm:p-6">
+            <span class="self-start rounded-full bg-[#FFF4E6] px-3 py-1 text-xs font-bold uppercase tracking-wider text-[#8B5E20]">Diseño</span>
+            <svg viewBox="0 0 160 160" class="mx-auto h-28 w-28 sm:h-36 sm:w-36" role="img" aria-label="Figura geométrica azul impresa en 3D">
+                <defs><linearGradient id="blueObject" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4D8BFF"/><stop offset="1" stop-color="#0A44C8"/></linearGradient></defs>
+                <path d="M80 14 133 45v69l-53 31-53-31V45z" fill="url(#blueObject)"/>
+                <path d="m80 14 53 31-53 31-53-31z" fill="#83B2FF"/>
+                <path d="M80 76v69l53-31V45z" fill="#0A44C8"/>
+                <path d="m53 60 27 16 27-16v35L80 111 53 95z" fill="#DCEBFF" opacity=".88"/>
+            </svg>
+            <p class="text-sm font-semibold text-[#2D3748]">Formas con carácter</p>
+            </article>
+
+            <article class="relative mt-10 flex min-h-52 flex-col justify-between overflow-hidden rounded-[1.75rem] bg-[#F8BA62] p-5 shadow-xl shadow-orange-900/10 sm:mt-14 sm:min-h-60 sm:p-6">
+            <span class="self-start rounded-full bg-white/70 px-3 py-1 text-xs font-bold uppercase tracking-wider text-[#73501F]">A tu manera</span>
+            <svg viewBox="0 0 160 160" class="mx-auto h-28 w-28 sm:h-36 sm:w-36" role="img" aria-label="Estrella naranja con volumen">
+                <path d="m80 13 17 45 48 2-37 30 13 47-41-27-41 27 13-47-37-30 48-2z" fill="#FFF4E6"/>
+                <path d="m80 13 17 45 48 2-37 30z" fill="#FFFFFF" opacity=".65"/>
+                <path d="m80 90 41 47-41-27-41 27 13-47z" fill="#E8A74F"/>
+            </svg>
+            <p class="text-sm font-semibold text-[#2D3748]">Un toque personal</p>
+            </article>
+
+            <div class="col-span-2 flex items-center justify-between rounded-2xl bg-[#0D55FC] px-5 py-4 text-white shadow-lg shadow-blue-200 sm:px-6">
+            <div>
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-blue-100">Tu próxima idea</p>
+                <p class="mt-1 text-base font-bold sm:text-lg">Podría empezar aquí.</p>
+            </div>
+            <span aria-hidden="true" class="flex size-11 items-center justify-center rounded-full bg-white/15 text-2xl">✦</span>
+            </div>
+        </div>
+        <span aria-hidden="true" class="absolute -right-2 top-5 flex size-12 rotate-12 items-center justify-center rounded-2xl bg-[#F8BA62] text-2xl text-[#2D3748] shadow-lg sm:-right-3 sm:top-8">✳</span>
+        </div>
+    </div>
+
+    <footer class="mx-auto flex max-w-7xl flex-col gap-2 border-t border-[#E2E8F0] pt-5 text-sm text-[#4A5568] sm:flex-row sm:items-center sm:justify-between">
+        <span>Diseñamos contigo. Imprimimos posibilidades.</span>
+        <span class="font-medium text-[#0A44C8]">Hecho capa a capa, para ti.</span>
+    </footer>
+</section>

@@ -1,0 +1,16 @@
+@if (status) {
+  <div class="flex min-h-screen bg-slate-50 text-slate-900">
+    <app-navbar class="block shrink-0" />
+    <div class="flex min-w-0 flex-1 flex-col">
+      <main class="min-w-0 flex-1 p-6 md:p-10">
+        <router-outlet />
+      </main>
+      <footer class="border-t border-slate-200 px-6 py-4 text-sm text-slate-500">
+        Pie de página
+      </footer>
+    </div>
+  </div>
+  
+} @else {
+  <app-bienvenida (salirDeBienvenida)="salirDeBienvenida($event)" />
+}

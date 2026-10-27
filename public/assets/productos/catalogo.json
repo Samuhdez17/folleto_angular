@@ -1,0 +1,31 @@
+[
+    {
+        "nombre": "llavero",
+        "precio": "XX€",
+        "imagen": "/public/assets/images/"
+    },
+    
+    {
+        "nombre": "llavero",
+        "precio": "XX€",
+        "imagen": "/public/assets/images/"
+    },
+
+    {
+        "nombre": "llavero",
+        "precio": "XX€",
+        "imagen": "/public/assets/images/"
+    },
+
+    {
+        "nombre": "llavero",
+        "precio": "XX€",
+        "imagen": "/public/assets/images/"
+    },
+
+    {
+        "nombre": "llavero",
+        "precio": "XX€",
+        "imagen": "/public/assets/images/"
+    }
+]

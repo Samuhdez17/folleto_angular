@@ -1,0 +1,56 @@
+<div
+    class="relative h-screen shrink-0 transition-[width] duration-300 ease-in-out"
+    [class.w-64]="isOpen"
+    [class.w-10]="!isOpen"
+>
+    <aside
+        class="h-full w-64 overflow-hidden border-r border-slate-200 bg-slate-900 text-slate-100 transition-transform duration-300 ease-in-out"
+        [class.-translate-x-full]="!isOpen"
+        [attr.aria-hidden]="!isOpen"
+    >
+        <div class="flex h-16 items-center gap-3 border-b border-slate-700 px-5">
+            <span class="flex size-9 items-center justify-center rounded-lg bg-indigo-500 font-bold text-white">Logo</span>
+            <span class="whitespace-nowrap text-lg font-semibold tracking-wide">Doble'S prints</span>
+        </div>
+
+        <nav aria-label="Navegación principal" class="space-y-1 px-3 py-5">
+            <p class="px-3 pb-2 text-xs font-semibold uppercase tracking-wider text-slate-400">Menú</p>
+            <a
+                routerLink="/"
+                routerLinkActive="bg-slate-800 text-white"
+                [routerLinkActiveOptions]="{ exact: true }"
+                class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-300 transition hover:bg-slate-800 hover:text-white"
+            >
+                <span aria-hidden="true" class="text-lg">📰</span>
+                <span class="whitespace-nowrap">Catalogo</span>
+            </a>
+
+            <a
+                routerLink="/colaboraciones"
+                routerLinkActive="bg-slate-800 text-white"
+                class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-300 transition hover:bg-slate-800 hover:text-white"
+            >
+                <span aria-hidden="true" class="text-lg">✦</span>
+                <span class="whitespace-nowrap">Colaboraciones</span>
+            </a>
+
+            <a routerLink="/personalizado" routerLinkActive="bg-slate-800 text-white"
+                class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-300 transition hover:bg-slate-800 hover:text-white">
+                <span aria-hidden="true" class="text-lg">🔎</span>
+                <span class="whitespace-nowrap">Pedido personalizado</span>
+            </a>
+        </nav>
+    </aside>
+
+    <button
+        type="button"
+        (click)="toggle()"
+        class="absolute top-5 z-10 flex size-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-700 shadow-sm transition hover:bg-slate-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+        [class.-right-4]="isOpen"
+        [class.left-4]="!isOpen"
+        [attr.aria-expanded]="isOpen"
+        [attr.aria-label]="isOpen ? 'Ocultar navegación' : 'Mostrar navegación'"
+    >
+        <span aria-hidden="true" class="text-lg leading-none">{{ isOpen ? '‹' : '☰' }}</span>
+    </button>
+</div>
